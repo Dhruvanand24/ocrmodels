@@ -3,8 +3,8 @@ import Tesseract from 'tesseract.js';
 import multer from 'multer';
 import cors from 'cors';
 import { closest } from 'fastest-levenshtein';
-import vision  from '@google-cloud/vision';
-import bodyParser from 'body-parser';
+//import vision  from '@google-cloud/vision';
+//import bodyParser from 'body-parser';
 
 const app = express();
 const port = 3001;
@@ -38,7 +38,7 @@ app.post('/api/upload', upload.single('image'), async (req, res) => {
     try {
       /*const [result] = await client.documentTextDetection(request);
       const text = result.fullTextAnnotation.text;
-      res.json({ text });
+      res.json({ ocrtext: text });
       */
 
       res.json({ocrText: 'enter google cloud vision api key', suggestedwords: 'nothing to show here'})
