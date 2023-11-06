@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Handwritten OCR App</h1>
+      <h1>Handwriting OCR App</h1>
       <input type="file" accept="image/*" onChange={handleImageChange} />
       <select value={selectedEngine} onChange={handleEngineChange}>
         <option value="tesseract">Tesseract</option>
